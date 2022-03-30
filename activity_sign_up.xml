@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="wait.waitapp.wait.ui.auth.SignUpActivity">
+
+    <TextView
+        android:id="@+id/signup_lets_stared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Get Started"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:textSize="@dimen/_28ssp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/signup_first_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a First Account to continue"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_lets_stared" />
+
+    <Button
+        android:id="@+id/signup_google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:layout_marginTop="@dimen/_49sdp"
+        android:background="@drawable/google_button"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_17ssp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableLeft="@drawable/common_google_signin_btn_icon_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_first_account"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+
+    <Button
+        android:id="@+id/signup_facebook_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textAllCaps="false"
+        android:background="@drawable/facebook_button"
+        android:textSize="@dimen/_17ssp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:drawablePadding="@dimen/_9sdp"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:drawableLeft="@drawable/com_facebook_button_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_google_sign_in"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/signup_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_margin="@dimen/_24sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_facebook_sign_in" />
+
+    <Button
+        android:id="@+id/signup_goTo_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/google_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_or"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="@dimen/_19ssp"
+        />
+
+    <TextView
+        android:id="@+id/signup_privacy_policy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/privacy_policy"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_goTo_sign_in"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
