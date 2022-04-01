@@ -113,7 +113,7 @@
         android:layout_marginHorizontal="36dp"
         android:layout_marginBottom="34dp"
         android:gravity="center_horizontal"
-        android:text="@string/privacy_policy"
+        android:text="By signing up your agree to First Terms of Use, to get email &amp; updates, and you acknowledge that you have to read our Privacy Policy"
         android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
